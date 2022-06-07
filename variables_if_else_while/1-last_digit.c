@@ -20,6 +20,14 @@ int main(void)
 	{
 		printf(" and is 0");
 	}
+	else if (n > 5)
+	{
+		printf(" and is greater than 5");
+	}
+	else
+	{
+		printf(" and is less than 6 and not 0");
+	}
 
 	return (0);
 }
