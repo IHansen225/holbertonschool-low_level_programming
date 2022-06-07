@@ -11,14 +11,21 @@
 int main(void)
 {
 	char alpha;
+	int comp[] = {44, 32};
 
 	for (alpha = '0'; alpha <= '9'; alpha++)
 	{
 		putchar(alpha);
 		if (alpha != '9')
 		{
-			putchar(44);
-			putchar(32);
+			for (int i = 0; i < 2; i++)
+			{
+				putchar(comp[i]);
+			};
+		}
+		else
+		{
+			putchar('$');
 		};
 	}
 	putchar(10);
