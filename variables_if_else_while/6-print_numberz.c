@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char alpha;
+	int alpha;
 
 	for (alpha = 48; alpha <= 57; alpha++)
 	{
