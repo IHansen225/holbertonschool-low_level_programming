@@ -23,10 +23,6 @@ int main(void)
 			{
 				putchar(comp[i]);
 			};
-		}
-		else
-		{
-			putchar('$');
 		};
 	}
 	putchar(10);
