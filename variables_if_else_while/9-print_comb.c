@@ -12,13 +12,14 @@ int main(void)
 {
 	char alpha;
 	int comp[] = {44, 32};
+	int i;
 
 	for (alpha = '0'; alpha <= '9'; alpha++)
 	{
 		putchar(alpha);
 		if (alpha != '9')
 		{
-			for (int i = 0; i < 2; i++)
+			for (i = 0; i < 2; i++)
 			{
 				putchar(comp[i]);
 			};
