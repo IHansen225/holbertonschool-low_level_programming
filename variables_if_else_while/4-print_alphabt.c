@@ -14,11 +14,11 @@ int main(void)
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		if (alpha !(101 || 113)
+		if (alpha NOT(101 OR 113)
 		{
 			putchar(alpha);
 		}
 	}
 
-	return (0)
+	return (0);
 }
