@@ -19,6 +19,7 @@ int main(void)
 			putchar(alpha);
 		};
 	}
+	putchar(10);
 
 	return (0);
 }
