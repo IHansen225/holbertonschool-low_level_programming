@@ -10,11 +10,11 @@
 
 int main(void)
 {
-	char alpha;
+	int alpha;
 	int comp[] = {44, 32};
 	int i;
 
-	for (alpha = '0'; alpha <= '9'; alpha++)
+	for (alpha = 48; alpha <= 57; alpha++)
 	{
 		putchar(alpha);
 		if (alpha != '9')
