@@ -2,9 +2,9 @@
 
 /**
  * _isalpha - checks for alpha char
- * @c: input character
+ * @n: input number
  *
- * Return: 1 if it's lowercase, 0 in any other case.
+ * Return: 1 if it's positive, 0 if negative, -1 if else.
  */
 
 int print_sign(int n);
