@@ -8,32 +8,21 @@
 
 void jack_bauer(void)
 {
+	int counter;
 	char i, j, k, l;
 	i = 48;
 	j = 48;
 	k = 48;
 	l = 48;
 
-	while (i <= 50)
+	while (counter < 24)
 	{
 		_putchar(i);
-		while (j <= 57)
-		{
-			_putchar(j);
-			_putchar(58);
-			while (k <= 53)
-			{
-				_putchar(k);
-				while (l <= 57)
-				{
-					_putchar(l);
-					_putchar(10);
-					l++;
-				}
-				k++;
-			}
-			j++;
-		}
-		i++;
+		_putchar(j);
+		_putchar(58);
+		_putchar(k);
+		_putchar(l);
+		_putchar(10);
+		counter++;
 	}
 }
