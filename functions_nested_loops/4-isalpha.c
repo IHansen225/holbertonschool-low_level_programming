@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _islower - checks for lowercase char
+ * _isalpha - checks for alpha char
  * @c: input character
  *
  * Return: 1 if it's lowercase, 0 in any other case.
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	if (c > 97 && c < 123)
 	{
