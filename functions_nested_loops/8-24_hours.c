@@ -10,6 +10,7 @@ void jack_bauer(void)
 {
 	int counter;
 	char i, j, k, l;
+
 	i = 48;
 	j = 48;
 	k = 48;
