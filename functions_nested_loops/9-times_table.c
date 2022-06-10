@@ -16,7 +16,7 @@ void times_table(void)
 		{
 			if (mult != 9)
 			{
-				if ((num * mult) > 9)
+				if ((num * mult) < 9)
 				{
 					_putchar(num * mult + '0');
 					_putchar(44);
@@ -30,7 +30,7 @@ void times_table(void)
 			}
 			else
 			{
-				if ((num * mult) > 9)
+				if ((num * mult) < 9)
 				{
 					_putchar(num * mult + '0');
 					_putchar(10);
