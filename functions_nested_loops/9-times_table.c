@@ -25,9 +25,9 @@ void times_table(void)
 				}
 				else
 				{
-					_putchar('a');
+					_putchar(((num * mult) / 10) + '0');
+					_putchar(((num * mult) % 10) + '0');
 					_putchar(44);
-					_putchar(32);
 					_putchar(32);
 				}
 			}
@@ -40,7 +40,8 @@ void times_table(void)
 				}
 				else
 				{
-					_putchar('a');
+					_putchar(((num * mult) / 10) + '0');
+					_putchar(((num * mult) % 10) + '0');
 					_putchar(10);
 				}
 			}
