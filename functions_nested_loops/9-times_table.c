@@ -8,21 +8,44 @@
 
 void times_table(void)
 {
-	int lar = 10;
-	int times[lar] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int cont, mult, num;
 
-	for (i = 0; i <= lar; i++);
+	for (cont = 0; cont <= 9; cont++);
 	{
-		if (i != 9)
+		for (mult = 0; mult <= 9; mult++)
 		{
-			_putchar((times[i] * i) + '0');
-			_putchar(44);
-			_putchar(32);
-			_putchar(32);
-		}
-		else
-		{
-			_putchar((times[i] * i) + '0');
+			if (mult < 9)
+			{
+				if ((cont * mult) > 10)
+				{
+					_putchar(((cont * mult) / 10) + '0');
+					_putchar(((cont * mult) % 10) + '0');
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+				else
+				{
+					_putchar(((cont * mult)) + '0');
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+			}
+			else
+			{
+				if ((cont * mult) > 10)
+				{
+					_putchar(((cont * mult) / 10) + '0');
+					_putchar(((cont * mult) % 10) + '0');
+					_putchar(10);
+				}
+				else
+				{
+					_putchar(((cont * mult)) + '0')
+					_putchar(10);
+				}
+			}
 		}
 	}
 }
