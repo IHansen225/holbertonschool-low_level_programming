@@ -16,16 +16,31 @@ void times_table(void)
 		{
 			if (mult != 9)
 			{
-				_putchar(num * mult + '0');
-				_putchar(44);
-				_putchar(32);
-				_putchar(32);
+				if ((num * mult) > 9)
+				{
+					_putchar(num * mult + '0');
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+				else
+				{
+					_putchar('a');
+				}
 			}
 			else
 			{
-				_putchar(num * mult + '0');
-				_putchar(10);
+				if ((num * mult) > 9)
+				{
+					_putchar(num * mult + '0');
+					_putchar(10);
+				}
+				else
+				{
+					_putchar('a');
+				}
 			}
 		}
 	}
 }
+
