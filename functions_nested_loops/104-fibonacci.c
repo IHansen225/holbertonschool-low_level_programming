@@ -16,7 +16,7 @@ int main(void)
 	for (cont = 0; cont <= 98; cont++)
 	{
 		nprint = n1 + n2;
-		printf("%d, ", nprint);
+		printf("%ld, ", nprint);
 		n1 = n2;
 		n2 = nprint;
 	}
