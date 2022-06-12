@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int nprint, n1, n2, cont;
+	long nprint, n1, n2, cont;
 	
 
 	n1 = 0;
