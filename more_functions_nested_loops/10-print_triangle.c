@@ -14,7 +14,7 @@ void print_triangle(int size)
 	tri = 0;
 	if (size > 0)
 	{
-		for (i = 0; i <= size; i++)
+		for (i = 0; i < size; i++)
 		{
 			spac--;
 			tri++;
