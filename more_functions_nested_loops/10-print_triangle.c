@@ -3,10 +3,11 @@
 
 /**
 * print_triangle - triangle printer
+* @size: triangle base
 * Return: void
 */
 
-void print_triangle(int size) 
+void print_triangle(int size)
 {
 	int i, j, k, spac, tri;
 
