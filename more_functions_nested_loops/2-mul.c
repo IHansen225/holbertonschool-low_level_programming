@@ -5,7 +5,6 @@
 * mul - multiplies numbers
 * @a: input 1
 * @b: input 2
-* @c: result
 * Return: multiplied numbers
 */
 
