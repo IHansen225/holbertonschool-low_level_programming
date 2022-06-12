@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long nprint, n1, n2, cont;
+	unsigned long nprint, n1, n2, cont;
 	
 
 	n1 = 0;
@@ -16,7 +16,7 @@ int main(void)
 	for (cont = 0; cont <= 98; cont++)
 	{
 		nprint = n1 + n2;
-		printf("%ld, ", nprint);
+		printf("%lu, ", nprint);
 		n1 = n2;
 		n2 = nprint;
 	}
