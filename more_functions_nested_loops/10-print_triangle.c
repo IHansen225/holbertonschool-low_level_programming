@@ -21,7 +21,7 @@ void print_triangle(int size)
 			for (j = 0; j <= spac; j++)
 				_putchar(32);
 			for (k = 0; k <= tri; k++)
-				_putchar(95);
+				_putchar(35);
 			_putchar(10);
 		}
 	}
