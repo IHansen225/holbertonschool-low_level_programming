@@ -14,7 +14,7 @@ int main(void)
 	n2 = 1;
 	for (cont = 0; cont <= 98; cont++)
 	{
-		if !(cont == 98)
+		if (cont != 98)
 		{
 			nprint = n1 + n2;
 			printf("%lu, ", nprint);
