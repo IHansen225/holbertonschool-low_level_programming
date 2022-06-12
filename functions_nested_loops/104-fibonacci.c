@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long nprint, n1, n2, cont;
+	unsigned long long nprint, n1, n2, cont;
 
 	n1 = 0;
 	n2 = 1;
@@ -17,7 +17,7 @@ int main(void)
 		if (cont != 98)
 		{
 			nprint = n1 + n2;
-			printf("%lu, ", nprint);
+			printf("%llu, ", nprint);
 			n1 = n2;
 			n2 = nprint;
 		}
