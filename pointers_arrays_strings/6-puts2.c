@@ -10,14 +10,17 @@ void puts2(char *s)
 {
 	int i;
 	int len = 0;
-	
+
 	while (s[len] != '\0')
 	{
 		len++;
 	}
-	
+
 	for (i = 0; i <= len; i++)
 	{
-		_putchar(s[i]);
+		if ((i % 2) = 0)
+		{
+			_putchar(s[i]);
+		}
 	}
 }
