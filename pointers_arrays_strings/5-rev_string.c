@@ -6,20 +6,13 @@
  * 
  * Returns: nothing
  */
-
 void rev_string(char *s)
 {
     int len = _strlen(s);
-    char *first = s;
-    char *last = first + len - 1;
-    char aux;
-
-    while (last > first)
-    {
-        aux = *first;
-        *first = *last;
-        *last = aux;
-        ++first;
-        --last;
+    int temp;
+    for(int i = 0; i<n/2; i++){
+        temp = s[i];
+        s[i] = s[len-i-1];
+        s[len-i-1] = temp;
     }
 }
