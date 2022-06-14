@@ -10,8 +10,8 @@
 void rev_string(char *s)
 {
     int len = _strlen(s);
-    char *first = str;
-    char *last = start + len - 1;
+    char *first = s;
+    char *last = first + len - 1;
     char aux;
 
     while (last > first)
