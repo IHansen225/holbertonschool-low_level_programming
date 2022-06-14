@@ -15,14 +15,14 @@ void rev_string(char *s)
 	j = len;
 	while (s[i] != '\0')
 	{
-		mirror[j] = s[i]
+		mirror[j] = s[i];
 		i++;
 		j--;
 	}
 	i = 0;
 	while (i >= len)
 	{
-		*s[i] = mirror[i];
+		s[i] = mirror[i];
 		i++;
 	}
 }
