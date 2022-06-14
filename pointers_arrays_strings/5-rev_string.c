@@ -7,8 +7,7 @@
  */
 void rev_string(char *s)
 {
-	const int len = _strlen(s);
-	char mirror[len];
+	char mirror[_strlen(s)];
 	int i, j;
 
 	i = 0;
