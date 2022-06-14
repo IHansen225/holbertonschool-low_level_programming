@@ -10,16 +10,4 @@
 void rev_string(char *s)
 {
     int len = _strlen(s);
-    char *first = s;
-    char *last = first + len - 1;
-    char aux;
-
-    while (last > first)
-    {
-        aux = *first;
-        *first = *last;
-        *last = aux;
-        ++first;
-        --last;
-    }
 }
