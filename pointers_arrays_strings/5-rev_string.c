@@ -7,14 +7,15 @@
  */
 void rev_string(char *s)
 {
-	char mirror = s;
 	int i, j;
-	
+	char mirror;
+
 	j = 0;
 	while (mirror[i] != '\0')
 	{
 		i++;
 	}
+	strncpy(mirror, s, i);
 	while (i >= 0)
 	{
 		s[j] = mirror[i]
