@@ -18,18 +18,18 @@ void puts_half(char *s)
 	if ((len % 2) == 0)
 	{
 		len = (len / 2);
-		while (s[i] != '\0')
+		while (s[len] != '\0')
 		{
-			_putchar(s[i]);
+			_putchar(s[len]);
 			len++;
 		}
 	}
 	else
 	{
 		len = ((len - 1) / 2);
-		while (s[i] != '\0')
+		while (s[len] != '\0')
 		{
-			_putchar(s[i]);
+			_putchar(s[len]);
 			len++;
 		}
 	}
