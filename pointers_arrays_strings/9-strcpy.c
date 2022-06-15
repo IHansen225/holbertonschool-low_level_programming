@@ -5,7 +5,7 @@
  * @dest: string input
  * @src: reach
  *
- * Returns: pointer
+ * Return: pointer
  */
 char *_strcpy(char *dest, char *src)
 {
