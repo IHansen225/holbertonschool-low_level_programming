@@ -3,7 +3,8 @@
 
 /**
  * print_array - prints a certain pattern
- * @s: string input
+ * @a: string input
+ * @n: reach
  *
  * Returns: nothing
  */
@@ -15,11 +16,12 @@ void print_array(int *a, int n)
 	{
 		if (i == (n - 1))
 		{
-			printf("%d\n", a[i]);
+			printf("%d", a[i]);
 		}
 		else
 		{
 			printf("%d, ", a[i]);
 		}
 	}
+	_putchar(10);
 }
