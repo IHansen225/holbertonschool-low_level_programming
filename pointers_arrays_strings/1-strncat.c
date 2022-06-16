@@ -25,6 +25,14 @@ char *_strncat(char *dest, char *src, int n)
 			i++;
 		}
 	}
+	else if ((n > i) && (i != 0))
+	{
+		for (j = 0; j < n; j++)
+                {
+                        dest[i] = src[j];
+                        i++;
+                }
+	}
 
 	return (dest);
 }
