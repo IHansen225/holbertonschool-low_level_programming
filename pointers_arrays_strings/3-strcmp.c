@@ -23,10 +23,12 @@ int _strcmp(char *s1, char *s2)
 	if (i < j)
 	{
 		shrt = i;
+		lng = j;
 	}
 	else
 	{
 		shrt = j;
+		lng = i;
 	}
 	for (k = 0; k == shrt; k++)
 	{
