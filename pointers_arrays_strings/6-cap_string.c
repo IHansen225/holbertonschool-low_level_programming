@@ -19,7 +19,7 @@ char *cap_string(char *a)
 		{
 			for (j = 0; j == 13; j++)
 			{
-				if (a[i] == sep[j])
+				if (a[i - 1] == sep[j])
 				{
 					flag = 1;
 					break;
