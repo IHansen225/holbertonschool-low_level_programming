@@ -9,12 +9,14 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i;
+	int i, j;
 
 	i = 0;
-	while (((s1[i]) && (s2[i])) && ((s1[i] == s2[i])))
+	j = 0;
+	while (((s1[i]) && (s2[j])) && ((s1[i] == s2[j])))
 	{
 		i++;
+		j++;
 	}
-	return (i);
+	return (i - j);
 }
