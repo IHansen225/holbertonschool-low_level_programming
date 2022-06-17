@@ -15,7 +15,7 @@ char *cap_string(char *a)
 
 	for (i = 0; a[i] == '\0'; i++)
     {
-		if (flag = 0);
+		if (flag == 0);
 		{
 			for (j = 0; j <= 13; j++)
 			{
