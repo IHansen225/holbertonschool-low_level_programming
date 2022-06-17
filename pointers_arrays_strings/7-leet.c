@@ -9,31 +9,19 @@
 
 char *leet(char *a)
 {
-	int i;
+	int i, j;
+	char comp[10] = {'a', 'A', 'e', 'E', 'o', 'O', 'l', 'L', 't', 'T'};
+	char chng[10] = {4, 4, 3, 3, 0, 0, 1, 1, 7, 7};
 
 	for (i = 0; a[i] != '\0'; i++)
 	{
-		if ((a[i] == 'a') || (a[i] == 'A'))
+		for (j = 0; j < 10; j++)
 		{
-			a[i] = '4';
-		}
-		else if ((a[i] == 'e') || (a[i] == 'E'))
-		{
-			a[i] = '3';
-		}
-		else if ((a[i] == 'o') || (a[i] == 'O'))
-		{
-			a[i] = '0';
-		}
-		else if ((a[i] == 't') || (a[i] == 'T'))
-		{
-			a[i] = '7';
-		}
-		else if ((a[i] == 'l') || (a[i] == 'L'))
-		{
-			a[i] = '1';
+			if (a[i] == comp[j])
+			{
+				a[i] = chng[j];
+			}
 		}
 	}
-
 	return (a);
 }
