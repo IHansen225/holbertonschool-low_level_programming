@@ -18,7 +18,7 @@ char *cap_string(char *a)
 
 	for (i = 0; a[i] == '\0'; i++)
 	{
-		_putchar('x');
+		a[i] = 'x';
 	}
 
 	return (a);
