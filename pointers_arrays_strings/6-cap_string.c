@@ -15,15 +15,12 @@ char *cap_string(char *a)
 
 	for (i = 0; a[i] != '\0'; i++)
 	{
-		if (i != 0)
+		for (j = 0; j < 13; j++)
 		{
-			for (j = 0; j < 13; j++)
+			if (a[i - 1] == sep[j])
 			{
-				if (a[i - 1] == sep[j])
-				{
-					flag = 1;
-					break;
-				}
+				flag = 1;
+				break;
 			}
 		}
 		if (((i == 0) || (flag == 1)) && ((a[i] > 96) && (a[i] < 123)))
