@@ -2,8 +2,8 @@
 
 /**
  * leet - capitalizes a string
- * @a: string 
- * 
+ * @a: string
+ *
  * return: nothing
  */
 
