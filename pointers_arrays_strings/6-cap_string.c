@@ -16,7 +16,7 @@ char *cap_string(char *a)
 	*/
 	int i, cont;
 
-	while (s[cont] != '\0')
+	while (a[cont] != '\0')
 	{
 		cont++;
 	}
