@@ -4,7 +4,7 @@
  * leet - capitalizes a string
  * @a: string
  *
- * return: nothing
+ * Return: nothing
  */
 
 char *leet(char *a)
