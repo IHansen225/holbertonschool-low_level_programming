@@ -14,7 +14,7 @@ char *cap_string(char *a)
 	int flag;
 
 	for (i = 0; a[i] == '\0'; i++)
-    {
+	{
 		if (flag == 0)
 		{
 			for (j = 0; j <= 13; j++)
@@ -43,4 +43,6 @@ char *cap_string(char *a)
 			}
 		}
 	}
+
+	return (a);
 }
