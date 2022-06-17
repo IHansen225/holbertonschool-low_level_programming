@@ -28,6 +28,10 @@ char *cap_string(char *a)
 			a[i] = a[i] - 32;
 			flag = 0;
 		}
+		else if ((flag == 1) && ((a[i] > 64) && (a[i] < 91)))
+		{
+			flag = 0;
+		}
 	}
 
 	return (a);
