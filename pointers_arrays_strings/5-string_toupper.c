@@ -2,6 +2,7 @@
 
 /**
  * string_toupper - copies a string
+ * @a: input
  *
  * Return: difference
  */
