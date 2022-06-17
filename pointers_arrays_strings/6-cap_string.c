@@ -14,9 +14,14 @@ char *cap_string(char *a)
 	* int i, j;
 	* int flag;
 	*/
-	int i;
+	int i, cont;
 
-	for (i = 0; a[i] == '\0'; i++)
+	while (s[cont] != '\0')
+	{
+		cont++;
+	}
+
+	for (i = 0; i == cont; i++)
 	{
 		a[i] = 'x';
 	}
