@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - copies a string
- * 
+ *
  * Return: difference
  */
 
@@ -23,5 +23,5 @@ char *string_toupper(char *a)
 		}
 	}
 
-	return a;
+	return (a);
 }
