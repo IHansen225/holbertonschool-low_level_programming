@@ -6,12 +6,12 @@
  * Return: difference
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *a)
 {
 	int i;
 
 	i = 0;
-	while (*[i] != '\0')
+	while (a[i] != '\0')
 	{
 		i++;
 	}
