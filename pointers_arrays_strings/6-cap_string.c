@@ -24,11 +24,7 @@ char *cap_string(char *a)
 						flag = 1;
 						break;
 					}
-					else
-					{
-						continue;
-					}
-				}
+			}
 		}
 		else
 		{
@@ -36,10 +32,6 @@ char *cap_string(char *a)
 			{
 				a[i] = a[i] - 32;
 				flag = 0;
-			}
-			else
-			{
-				continue;
 			}
 		}
 	}
