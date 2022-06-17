@@ -32,6 +32,10 @@ char *cap_string(char *a)
 		{
 			flag = 0;
 		}
+		else if ((flag == 1) && ((a[i] > 47) && (a[i] < 58)))
+		{
+			flag = 0;
+		}
 	}
 
 	return (a);
