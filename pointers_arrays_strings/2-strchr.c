@@ -29,6 +29,7 @@ char *_strchr(char *s, char c)
 	if (j == i)
 	{
 		p = NULL;
+		return (p);
 	}
 	else
 	{
