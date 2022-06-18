@@ -19,14 +19,14 @@ char *_strchr(char *s, char c)
 	{
 		i++;
 	}
-	for (j = 0; j < i; j++)
+	for (j = 0; j <= i; j++)
 	{
 		if (s[j] == c)
 		{
 			break;
 		}
 	}
-	if (j == i)
+	if (j > i)
 	{
 		p = NULL;
 		return (p);
