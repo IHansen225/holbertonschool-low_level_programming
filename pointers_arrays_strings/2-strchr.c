@@ -25,5 +25,12 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	return (p += j);
+	if (j == i)
+	{
+		p = NULL;
+	}
+	else
+	{
+		return (p += j);
+	}
 }
