@@ -5,7 +5,7 @@
  * _strchr - copies a pointer to a string
  * @s: string
  * @c: char to find
- * 
+ *
  * Return: pointer
  */
 
