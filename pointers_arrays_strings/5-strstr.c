@@ -5,7 +5,7 @@
  * _strstr - returns length of a certain pattern
  * @haystack: string
  * @needle: characters to find
- * 
+ *
  * Return: length of a given pattern
  */
 
