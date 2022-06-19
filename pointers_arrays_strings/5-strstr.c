@@ -11,36 +11,28 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j, temp;
-	char *s;
-
-	temp = 0;
-	for (i = 0; haystack[i]; i++)
+	int i, j, mark;
+	
+	if (needle[0] != 0)
 	{
-		if (haystack[i] == needle[0])
+		for (i = 0; haystack[i]; i++)
 		{
-			s = &haystack[i];
-			temp = i + 1;
-			for (j = 1; haystack[j]; j++)
+			if (haystack [i] == needle[0])
 			{
-				if (haystack[j] == needle[j])
+				pos = i;
+				for (j = 0; needle[j]; j++)
 				{
 					if (needle[j + 1] == '\0')
 					{
-						return (s);
+						return (&haystack[pos]);
 					}
-					else
-					{
-						continue;
-					}
-				}
-				else
-				{
-					break;
+				pos++;
 				}
 			}
 		}
 	}
-	s = NULL;
-	return (s);
+	else
+	{
+		return (haystack);
+	}
 }
