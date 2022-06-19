@@ -29,7 +29,6 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 	}
-	p += i;
 
-	return (p);
+	return (&s[i]);
 }
