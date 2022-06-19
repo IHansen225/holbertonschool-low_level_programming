@@ -23,19 +23,11 @@ char *_strpbrk(char *s, char *accept)
 			{
 				if (s[i] == accept[j])
 				{
-					flag = 1;
-					break;
+					return (s + i);
 				}
 			}
 		}
 	}
-	if (flag == 1)
-	{
-		return (s += i);
-	}
-	else
-	{
-		s = NULL;
-		return (s);
-	}
+	s = NULL;
+	return (s);
 }
