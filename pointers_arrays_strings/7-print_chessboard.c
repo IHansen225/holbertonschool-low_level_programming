@@ -4,7 +4,7 @@
 /**
  * print_chessboard - returns length of a certain pattern
  * @a: string
- * 
+ *
  * Return: nothing
  */
 
