@@ -14,6 +14,7 @@ char *_strstr(char *haystack, char *needle)
 	unsigned int i, j, temp;
 	char *s;
 
+	temp = 0;
 	for (i = 0; haystack[i]; i++)
 	{
 		if (haystack[i] == needle[0])
