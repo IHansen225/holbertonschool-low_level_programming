@@ -13,7 +13,6 @@ char *_strpbrk(char *s, char *accept)
 {
 	int j, flag;
 	unsigned int i;
-	char *p = &s[0];
 
 	flag = 0;
 	for (i = 0; s[i]; i++)
@@ -22,7 +21,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			for (j = 0; accept[j]; j++)
 			{
-				if (s[i] == accept[j])
+				if (s[i] =f accept[j])
 				{
 					flag = 1;
 					break;
@@ -32,11 +31,11 @@ char *_strpbrk(char *s, char *accept)
 	}
 	if (flag == 1)
 	{
-		return (p += i);
+		return (s += i);
 	}
 	else
 	{
 		p = NULL;
-		return (p);
+		return (s);
 	}
 }
