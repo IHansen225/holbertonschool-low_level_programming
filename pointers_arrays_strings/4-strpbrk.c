@@ -10,7 +10,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j, flag;
+	int j, flag;
+	unsigned int i;
 	char *p = &s[0];
 
 	flag = 0;
@@ -28,6 +29,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 	}
+	p += i;
 
-	return (p += i);
+	return (p);
 }
