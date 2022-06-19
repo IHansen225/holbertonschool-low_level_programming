@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strspn - returns length of a certain pattern
+ * _strpbrk - returns length of a certain pattern
  * @s: string
  * @accept: characters to find
  * 
  * Return: length of a given pattern
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int j, flag;
 	unsigned int i;
@@ -30,5 +30,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 	}
 
-	return (&s[i]);
+	return (p += i);
 }
