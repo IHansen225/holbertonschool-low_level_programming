@@ -4,7 +4,7 @@
  * _strspn - returns length of a certain pattern
  * @s: string
  * @accept: characters to find
- * 
+ *
  * Return: length of a given pattern
  */
 
