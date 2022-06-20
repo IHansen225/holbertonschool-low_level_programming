@@ -3,7 +3,7 @@
 /**
  * _strlen_recursion - first recursion function
  * @s: string
- * 
+ *
  * Return: nothing
  */
 
