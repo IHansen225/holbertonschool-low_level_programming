@@ -2,8 +2,8 @@
 
 /**
  * factorial - first recursion function
- * @s: string
- * 
+ * @n: string
+ *
  * Return: nothing
  */
 
