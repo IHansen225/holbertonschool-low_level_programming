@@ -6,7 +6,7 @@
  * print_diagsums - returns length of a certain pattern
  * @a: string
  * @size: arr size
- * 
+ *
  * Return: nothing
  */
 
