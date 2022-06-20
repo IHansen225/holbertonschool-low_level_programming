@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdio.h>
 
 /**
  * print_diagsums - returns length of a certain pattern
@@ -11,7 +12,7 @@
 
 void print_diagsums(int *a, int size)
 {
-	int sum1, sum2, i, j;
+	int sum1, sum2, i;
 
 	for (i = 0; i < size; i++)
 	{
