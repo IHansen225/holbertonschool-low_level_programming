@@ -3,7 +3,7 @@
 /**
  * _print_rev_recursion - first recursion function
  * @s: string
- * 
+ *
  * Return: nothing
  */
 
