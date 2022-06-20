@@ -3,7 +3,7 @@
 /**
  * _puts_recursion - first recursion function
  * @s: string
- * 
+ *
  * Return: nothing
  */
 
@@ -16,6 +16,6 @@ void _puts_recursion(char *s)
 	}
 	else
 	{
-		_putchar(*s);
+		_putchar(10);
 	}
 }
