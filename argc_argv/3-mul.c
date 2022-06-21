@@ -18,8 +18,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		mult = (argv[1] * argv[2]);
-		return (mult);
+		mult = (*argv[1] * *argv[2]);
+		printf("%d\n", mult);
 	}
 
 	return (0);
