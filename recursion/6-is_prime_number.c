@@ -12,7 +12,7 @@ int _recusrive_division(int x, int y)
 {
 	if ((x % y != 0) && (x != y))
 	{
-		_recusrive_division(int x, int y + 1)
+		return (_recusrive_division(int x, int (y + 1)));
 	}
 	else
 	{
