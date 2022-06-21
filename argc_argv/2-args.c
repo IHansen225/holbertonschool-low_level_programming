@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * _print_mynameis - prints program name
+ * main - prints program name
+ * @argc: arguments
+ * @argv: argument array
  *
  * Return: nothing
  */
