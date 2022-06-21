@@ -4,7 +4,7 @@
  * main - prints multiplication
  * @argc: number of arguments
  * @argv: arguments
- * 
+ *
  * Return: nothing
  */
 
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		mult = *argv[1] * *argv[2];
+		mult = (argv[1] * argv[2]);
 		return (mult);
 	}
 
