@@ -10,7 +10,6 @@
 
 int main(int argc, char *argv[])
 {
-	int mult;
 
 	if (argc < 3)
 	{
@@ -18,8 +17,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		mult = (*argv[1] * *argv[2]);
-		printf("%d\n", mult);
+		printf("%d\n", (argv[1] * argv[2]));
 	}
 
 	return (0);
