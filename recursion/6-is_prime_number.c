@@ -8,7 +8,7 @@
  * Return: 0 or 1
  */
 
-int _recusrive_division(int x, int y)
+int _recursive_division(int x, int y)
 {
 	if ((x % y != 0) && (x != y) && (x != 1))
 	{
@@ -34,5 +34,5 @@ int _recusrive_division(int x, int y)
 
 int is_prime_number(int n)
 {
-	return (_recusrive_division(n, 2));
+	return (_recursive_division(n, 2));
 }
