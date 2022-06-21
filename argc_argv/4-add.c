@@ -8,31 +8,31 @@
  * Return: nothing
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i, sum;
+	int i, j, sum;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-	}
-	else
-	{
-		for (i = 1; i <= argc; i++)
+	sum = 0;
+		if (argc < 3)
 		{
-			if ((argc[i] > 97) && (argc[i] < 123))
-			{
-				printf("Error");
-			}
-			else
-			{
-				continue;
-			}
+			printf("0\n");
+
+			return (0);
 		}
-		for (i = 1; i <= argc; i++)
+		for (j = 1; j < argc; j++)
 		{
-			sum += atoi(argv[i]);
+			for (i = 0; argv[j][i]; i++)
+			{
+				if (isdigit(argv[j][i]) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+
+			sum += atoi(argv[j]);
 		}
-		printf("%d", sum);
-	}
+	printf("%d\n", add);
+
+	return (0);
 }
