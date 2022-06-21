@@ -10,9 +10,13 @@
 
 int _recursive_power(int x, int y)
 {
-	if (x < 4)
+	if ((x < 4) && (x != 1))
 	{
 		return (-1);
+	}
+	else if (x == 1)
+	{
+		return (1);
 	}
 	else if (y * y == x)
 	{
