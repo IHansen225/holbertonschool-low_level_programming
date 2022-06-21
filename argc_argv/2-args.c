@@ -2,7 +2,7 @@
 
 /**
  * _print_mynameis - prints program name
- * 
+ *
  * Return: nothing
  */
 
@@ -14,6 +14,6 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
-	
+
 	return (0);
 }
