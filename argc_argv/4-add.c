@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		{
 			if ((argc[i] > 97) && (argc[i] < 123))
 			{
-				printf("Error")
+				printf("Error");
 			}
 			else
 			{
