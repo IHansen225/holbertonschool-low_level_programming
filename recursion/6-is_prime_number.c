@@ -12,7 +12,7 @@ int _recursive_division(int x, int y)
 {
 	if ((x % y != 0) && (x != y) && (x != 1))
 	{
-		return (_recusrive_division(x, (y + 1)));
+		return (_recursive_division(x, (y + 1)));
 	}
 	else if ((x == 1) || (x < 0))
 	{
