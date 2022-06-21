@@ -16,9 +16,9 @@ int _recusrive_division(int x, int y)
 	}
 	else
 	{
-		return (0);
+		return (1);
 	}
-	return (1);
+	return (0);
 }
 
 int is_prime_number(int n)
