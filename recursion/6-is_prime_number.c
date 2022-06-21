@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _pow_recursion - returns power of certain number
+ * _recursive_division - returns 1 if number is prime
+ * is_prime_number - same as above
  * @x: value
  * @y: value
  *
