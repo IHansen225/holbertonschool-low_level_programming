@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 /**
- * _print_mynameis - prints program name
+ * main - prints program name
  * 
  * Return: nothing
  */
 
-void _print_mynameis(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     printf("%s\n", argv[argc - argc]);
+
+    return (0);
 }
