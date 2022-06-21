@@ -6,7 +6,7 @@
  * main - prints multiplication
  * @argc: number of arguments
  * @argv: arguments
- * 
+ *
  * Return: nothing
  */
 
