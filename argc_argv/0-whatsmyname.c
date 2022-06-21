@@ -6,7 +6,7 @@
  * Return: nothing
  */
 
-void _print_mynameis(int argc, char *argv[])
+void _print_mynameis(char *argv[])
 {
     printf("%s\n", argv[0]);
 }
