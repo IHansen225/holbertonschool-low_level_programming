@@ -2,11 +2,10 @@
 
 /**
  * _recursive_division - returns 1 if number is prime
- * is_prime_number - same as above
  * @x: value
  * @y: value
  *
- * Return: nothing
+ * Return: 0 or 1
  */
 
 int _recusrive_division(int x, int y)
@@ -25,6 +24,13 @@ int _recusrive_division(int x, int y)
 	}
 	return (0);
 }
+
+/**
+ * is_prime_number - same as above
+ * @n: number to analyze
+ *
+ * Return: 0 or 1
+ */
 
 int is_prime_number(int n)
 {
