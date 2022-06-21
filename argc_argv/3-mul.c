@@ -14,11 +14,11 @@ int main(int argc, char *argv[])
 
 	if (argc < 3)
 	{
-		printf("Error\n")
+		printf("Error\n");
 	}
 	else
 	{
-		mult = argv[1] * argv[2]
+		mult = argv[1] * argv[2];
 		return (mult);
 	}
 
