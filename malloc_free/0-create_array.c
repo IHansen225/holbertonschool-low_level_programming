@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size < 1)
 	{
-		result = NULL;
+		return (NULL);
 	}
 	else
 	{
@@ -25,7 +25,7 @@ char *create_array(unsigned int size, char c)
 		{
 			result[i] = c;
 		}
-	}
 
-	return (result);
+		return (result);
+	}
 }
