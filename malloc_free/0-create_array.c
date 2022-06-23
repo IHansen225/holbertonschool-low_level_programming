@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * _create_array - creates a pseudo-array
+ * create_array - creates a pseudo-array
  * @size: size
  * @c: character
- * 
+ *
  * Return: nothing
  */
 
