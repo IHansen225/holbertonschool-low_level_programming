@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints multiplication
+ * _create_array - creates a pseudo-array
  * @size: size
  * @c: character
  * 
