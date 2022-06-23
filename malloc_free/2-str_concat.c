@@ -43,6 +43,6 @@ char *str_concat(char *s1, char *s2)
 		newstr[i] = s2[j];
 		i++;
 	}
-	
+
 	return (newstr);
 }
