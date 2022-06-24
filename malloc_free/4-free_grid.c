@@ -5,6 +5,7 @@
 /**
  * free_grid - prints multiplication
  * @height: int
+ * @grid: grid
  *
  * Return: nothing
  */
@@ -12,7 +13,7 @@
 void free_grid(int **grid, int height)
 {
 	int i;
-	
+
 	if (grid != NULL)
 	{
 		for (i = height; i >= 0; i--)
