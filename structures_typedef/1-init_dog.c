@@ -3,21 +3,26 @@
 #include <stdio.h>
 
 /**
- * init_dog - initialize the dog struct
+ * print_dog - print the dog struct
  * @d: struct to be initialized
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
  *
  * Return: nothing
  */
 
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void print_dog(struct dog *d)
 {
-	if (d != NULL)
-	{
-		(*d).name = name;
-		(*d).age = age;
-		(*d).owner = owner;
-	}
+	if (d == NULL)
+		return;
+	if (d->name == NULL)
+		return;
+	else
+		printf("Name: %s\n", d->name);
+	if (d->age == NULL)
+		return;
+	else
+		printf("Age: %.1f\n", d->age);
+	if (d->owner == NULL)
+		return;
+	else
+		printf("Owner: %.s\n", d->owner);
 }
