@@ -44,7 +44,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_add - recieves arguments and returns result
+ * op_div - recieves arguments and returns result
  * @a: first argument
  * @b: second argument
  *
@@ -57,7 +57,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_div - recieves arguments and returns result
+ * op_mod - recieves arguments and returns result
  * @a: first argument
  * @b: second argument
  *
