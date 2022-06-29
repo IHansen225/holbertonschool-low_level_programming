@@ -17,12 +17,12 @@ int main(int argc, char *argv[])
 
 	if (argc < 4)
 	{
-		printf("Error\n");
+		printf("Error98\n");
 		exit(98);
 	}
 	if (((*argv[2] == '/') || (*argv[2] == '%')) && (atoi(argv[3]) == 0))
 	{
-		printf("Error\n");
+		printf("Error100\n");
 		exit(100);
 	}
 	if ((*(get_op_func(argv[2]))) != NULL)
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		printf("Error\n");
+		printf("Error99\n");
 		exit(99);
 	}
 
