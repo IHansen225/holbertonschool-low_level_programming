@@ -14,7 +14,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
     dog_t *newdog;
-    int nlen, olen, i, bytes;
+    int nlen, olen, i;
 
     nlen = 0;
     olen = 0;
