@@ -19,12 +19,12 @@ int main(int argc, char *argv[])
         printf("Error\n");
         exit(98);
     }
-    if (((argv[2] == 47) || (argv[2] == 37)) && (atoi(argv[4]) == 0))
+    if (((*argv[2] == '/') || (*argv[2] == '%')) && (atoi(*argv[4]) == 0))
     {
         printf("Error\n");
         exit(100);
     }
-    if ((argv[2] == 43) || (argv[2] == 45) || (argv[2] == 42) || (argv[2] == 47) || (argv[2] == 37))
+    if ((*argv[2] == '+') || (*argv[2] == '-') || (*argv[2] == '*') || (*argv[2] == '/') || (*argv[2] == '%'))
     {
 
     }
@@ -33,6 +33,6 @@ int main(int argc, char *argv[])
         printf("Error\n");
         exit(99);
     }
-
+    
     return (0);
 }
