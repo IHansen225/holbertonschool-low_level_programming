@@ -6,8 +6,7 @@
 
 /**
  * get_op_func - gets the appropiate pointer to the function
- * @argc: argument count
- * @argv: argument list
+ * @s: argument count
  *
  * Return: result of function
  */
