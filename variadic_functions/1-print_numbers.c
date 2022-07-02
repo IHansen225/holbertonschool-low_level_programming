@@ -9,6 +9,7 @@
  * print_numbers - print all arguments
  *
  * @n: elements to print
+ * @separator: separator
  * Return: nothing
  */
 
