@@ -15,14 +15,15 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i, j, len;
+	unsigned int i, len;
 	va_list ap;
 	char *stp;
 	char c[1];
 
+
 	i = 0; 
 	va_start(ap, len);
-		while (i < len)
+		while (i < (strlen(format)))
 		c[0] = format[i];
 		{
 			switch (c[0])
