@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 					break;
 				
 				case ('f'):
-					printf("%f", va_arg(ap, float));
+					printf("%lf", va_arg(ap, double));
 					break;
 
 				case ('i'):
