@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 	char *ch;
 
 	i = 0;
-	len = strlen(format);
+	len = strlen(format) + 1;
 	va_start(ap, len);
 		while (i < len)
 		ch = &format[i];
