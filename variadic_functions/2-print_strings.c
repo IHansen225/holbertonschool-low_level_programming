@@ -6,7 +6,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - print all arguments
+ * print_strings - print all arguments
  *
  * @n: elements to print
  * @separator: separator
