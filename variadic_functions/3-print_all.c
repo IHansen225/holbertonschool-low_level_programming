@@ -15,17 +15,17 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i, len;
+	unsigned int i, j, len;
 	va_list ap;
-	char *ch;
+	char *stp;
+	char *c[1];
 
-	i = 0;
-	len = strlen(format) + 1;
+	i = 0; 
 	va_start(ap, len);
 		while (i < len)
-		ch = &format[i];
+		c[0] = format[i];
 		{
-			switch (ch[0])
+			switch (c[0])
 			{
 				case ('c'):
 					printf("%s", va_arg(ap, char *));
@@ -40,7 +40,11 @@ void print_all(const char * const format, ...)
 					break;
 
 				case ('s'):
-					printf("%s", va_arg(ap, char *));
+					stp = va_arg(ap, char *);
+					if (stp == NULL)
+						printf("(nil)");
+					else
+						printf("%s", stp);
 					break;
 			}
 			if ((i + 1) != len)
