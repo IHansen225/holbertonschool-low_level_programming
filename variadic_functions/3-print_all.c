@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 	unsigned int i, j, len;
 	va_list ap;
 	char *stp;
-	char *c[1];
+	char c[1];
 
 	i = 0; 
 	va_start(ap, len);
