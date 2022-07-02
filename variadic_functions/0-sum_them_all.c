@@ -7,7 +7,7 @@
 
 /**
  * sum_them_all - sum all arguments
- * 
+ *
  * @n: elements to sum
  * Return: result of sum
  */
