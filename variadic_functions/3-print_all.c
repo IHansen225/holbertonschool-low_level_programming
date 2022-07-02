@@ -48,7 +48,7 @@ void print_all(const char * const format, ...)
 						printf("%s", stp);
 					break;
 			}
-			if ((i + 1) != len)
+			if ((i + 1) != (strlen(format)))
 				printf(", ");
 		}
 	va_end(ap);
