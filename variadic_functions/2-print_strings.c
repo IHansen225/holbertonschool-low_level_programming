@@ -17,11 +17,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list ap;
+	char *stp;
 
 	va_start(ap, n);
 		for (i = 0; i < n; i++)
 		{
-			if (strlen(va_arg(ap, char *)) == 0)
+			stp = va_arg(ap, char *);
+			if (stp == 0)
 				printf("(nil)");
 			else
 				printf("%s", va_arg(ap, char *));
