@@ -27,7 +27,7 @@ void print_all(const char * const f, ...)
 				switch (f[i])
 				{
 					default:
-						j++;
+						i++;
 						continue;
 					case 'c':
 						printf("%c", va_arg(ap, int));
