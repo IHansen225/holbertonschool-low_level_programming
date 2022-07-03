@@ -16,7 +16,7 @@
 void print_all(const char * const f, ...)
 {
 	va_list ap;
-	unsigned int i, j = 0;
+	unsigned int i = 0;
 	char *stcpy;
 	
 	va_start(ap, f);
