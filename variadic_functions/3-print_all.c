@@ -39,7 +39,7 @@ void print_all(const char * const f, ...)
                     printf("%s", stcpy);
                     break;
                 case 'i':
-                    prtinf("%d", (va_arg(ap, int)));
+                    printf("%d", (va_arg(ap, int)));
                     break;
                 default:
                     i++;
