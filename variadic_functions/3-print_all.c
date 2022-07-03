@@ -29,7 +29,7 @@ void print_all(const char * const f, ...)
 						i++;
 						continue;
 					case 'c':
-						printf("%c", va_arg(ap, int));
+						printf("%c", va_arg(ap, char));
 						break;
 					case 'i':
 						printf("%d", va_arg(ap, int));
@@ -44,7 +44,7 @@ void print_all(const char * const f, ...)
 							printf("(nil)");
 							break;
 						}
-						printf("%s", va_arg(ap, char *));
+						printf("%s", stcpy);
 						break;
 				}
 			}
