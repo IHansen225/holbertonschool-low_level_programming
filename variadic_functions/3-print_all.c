@@ -13,44 +13,25 @@
  * Return: nothing
  */
 
-void print_all(const char * const format, ...)
+void print_all(const char * const f, ...)
 {
 	unsigned int i, len;
 	va_list ap;
 	char *stp;
 	char c[1];
+	char *args;
 
 
-	i = 0; 
-	va_start(ap, len);
-		while (i < (strlen(format)))
-		c[0] = format[i];
+	i = 0;
+	len = 0;
+	while (f[i])
 		{
-			switch (c[0])
-			{
-				case ('c'):
-					printf("%s", va_arg(ap, char *));
-					break;
-				
-				case ('f'):
-					printf("%f", va_arg(ap, double));
-					break;
-
-				case ('i'):
-					printf("%d", va_arg(ap, int));
-					break;
-
-				case ('s'):
-					stp = va_arg(ap, char *);
-					if (stp == NULL)
-						printf("(nil)");
-					else
-						printf("%s", stp);
-					break;
-			}
-			if ((i + 1) != (strlen(format)))
-				printf(", ");
+			if ((f[i] == 'c') || (f[i] == 'i') || (f[i] == 'f') || (f[i] == 's'))
+				len++;
+			i++;
 		}
+	va_start(ap, len);
+
 	va_end(ap);
 	printf("\n");
 }
