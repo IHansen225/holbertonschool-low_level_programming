@@ -6,10 +6,9 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - print all arguments
+ * print_all - print all arguments
  *
- * @n: elements to print
- * @separator: separator
+ * @f: elements to print
  * Return: nothing
  */
 
@@ -18,7 +17,7 @@ void print_all(const char * const f, ...)
 	va_list ap;
 	unsigned int i = 0;
 	char *stcpy;
-	
+
 	va_start(ap, f);
 		while (f)
 		{
