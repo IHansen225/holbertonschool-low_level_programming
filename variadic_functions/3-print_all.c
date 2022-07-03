@@ -21,7 +21,7 @@ void print_all(const char * const f, ...)
 	va_start(ap, f);
 		while (f != NULL)
 		{
-			while ((f != NULL) && (f[i]))
+			while ((f != NULL) && (f[i] != '\0'))
 			{
 				switch (f[i])
 				{
