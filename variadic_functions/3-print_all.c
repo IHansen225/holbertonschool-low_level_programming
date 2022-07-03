@@ -28,15 +28,19 @@ void print_all(const char * const f, ...)
 					default:
 						i++;
 						continue;
+						
 					case 'c':
 						printf("%c", va_arg(ap, int));
 						break;
+
 					case 'i':
 						printf("%d", va_arg(ap, int));
 						break;
+
 					case 'f':
 						printf("%f", va_arg(ap, double));
 						break;
+
 					case 's':
 						stcpy = va_arg(ap, char *);
 						if (stcpy == NULL)
