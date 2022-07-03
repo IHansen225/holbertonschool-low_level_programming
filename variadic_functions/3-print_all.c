@@ -15,23 +15,42 @@
 
 void print_all(const char * const f, ...)
 {
-	unsigned int i, len;
 	va_list ap;
-	char *stp;
-	char c[1];
-	char *args;
-
-
-	i = 0;
-	len = 0;
-	while (f[i])
+	unsigned int i, j = 0;
+	char *stcpy;
+	
+	va_start(ap, f);
+		while (f)
 		{
-			if ((f[i] == 'c') || (f[i] == 'i') || (f[i] == 'f') || (f[i] == 's'))
-				len++;
+			while (f[i])
+			{
+				switch (f[j])
+				{
+					default:
+						j++;
+						continue;
+					case 'c':
+						printf("%c", va_arg(ap, int));
+						break;
+					case 'i':
+						printf("%d", va_arg(ap, int));
+						break;
+					case 'f':
+						printf("%f", va_arg(ap, double));
+						break;
+					case 's':
+						stcpy = va_arg(ap, char *);
+						if (stcpy != 0)
+							printf("%s", va_arg(ap, char *));
+						else
+							printf("(nil)");
+						break;
+				}
+			}
+			if (f[i + 1] != '\0')
+				printf(", ");
 			i++;
 		}
-	va_start(ap, len);
-
-	va_end(ap);
 	printf("\n");
+	va_end(ap);
 }
