@@ -24,7 +24,7 @@ void print_all(const char * const f, ...)
 		{
 			while (f[i])
 			{
-				switch (f[j])
+				switch (f[i])
 				{
 					default:
 						j++;
