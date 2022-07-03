@@ -41,8 +41,10 @@ void print_all(const char * const f, ...)
 					case 's':
 						stcpy = va_arg(ap, char *);
 						if (stcpy == NULL)
+						{
 							printf("(nil)");
 							break;
+						}
 						printf("%s", va_arg(ap, char *));
 						break;
 				}
