@@ -19,9 +19,9 @@ void print_all(const char * const f, ...)
 	char *stcpy;
 
 	va_start(ap, f);
-		while (f)
+		while (f != NULL)
 		{
-			while (f[i])
+			while ((f != NULL) && (f[i]))
 			{
 				switch (f[i])
 				{
