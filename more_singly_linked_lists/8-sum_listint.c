@@ -19,7 +19,7 @@ int sum_listint(listint_t *head)
 	}
 	else
 	{
-		return (NULL);
+		return (0);
 	}
 	while (p->next != NULL)
 	{
@@ -27,5 +27,5 @@ int sum_listint(listint_t *head)
         p = p->next;
 	}
 
-	return (p);
+	return (i);
 }
