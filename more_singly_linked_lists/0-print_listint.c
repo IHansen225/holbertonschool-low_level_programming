@@ -16,11 +16,11 @@ size_t print_listint(const listint_t *h)
 	{
 		if (p->str != NULL)
 		{
-			printf("[%u] %s", p->len, p->str);
+			printf("%d", p->n);
 		}
 		else
 		{
-			printf("[0] (nil)");
+			printf("(nil)");
 		}
 		i++;
 		putchar('\n');
