@@ -7,16 +7,16 @@
  * Return: 0
  */
 
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *p_elem, *elem;
 
-	elem = head;
+	elem = *head;
 	while (elem)
 	{
 		p_elem = elem;
 		elem = elem->next;
 		free(p_elem);
 	}
-    head = NULL;
+    *head = NULL;
 }
