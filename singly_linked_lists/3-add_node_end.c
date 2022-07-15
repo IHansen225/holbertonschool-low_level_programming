@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - prints list length
+ * add_node_end - adds node at end of list
  *
  * @head: list header
  * @str: list string
@@ -23,5 +23,5 @@ list_t *add_node_end(list_t **head, const char *str)
 	newelement->len = strlen(str);
 	p->next = newelement;
 
-	return (newelement);
+	return (*head);
 }
