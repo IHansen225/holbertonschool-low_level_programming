@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds node at end of list
+ * free_list - adds node at end of list
  *
  * @head: list header
- * @str: list string
  * Return: 0
  */
 
