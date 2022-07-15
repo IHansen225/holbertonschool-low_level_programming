@@ -14,15 +14,7 @@ size_t print_listint(const listint_t *h)
 
 	for (; p != NULL; p = p->next)
 	{
-		if (p->str != NULL)
-		{
-			printf("%d", p->n);
-		}
-		else
-		{
-			printf("(nil)");
-		}
-		i++;
+        printf("%d", p->n);
 		putchar('\n');
 	}
 
