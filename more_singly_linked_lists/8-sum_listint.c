@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - finds nth node in the list
+ * sum_listint - sums every element of a list
  *
  * @head: list header
- * @index: index to find
  * Return: 0
  */
 
@@ -24,7 +23,7 @@ int sum_listint(listint_t *head)
 	while (p)
 	{
 		i += p->n;
-        p = p->next;
+		p = p->next;
 	}
 
 	return (i);
