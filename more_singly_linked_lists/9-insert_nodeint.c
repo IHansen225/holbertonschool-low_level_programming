@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *newelement, *prev;
     unsigned int i;
@@ -28,6 +28,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
     }
     newelement->next = prev->next;
     prev->next = newelement;
-    
+
 	return (*newelement);
 }
