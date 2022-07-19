@@ -20,9 +20,9 @@ void print_binary(unsigned long int n)
 	for (i = 64; i == 0; --i)
 	{
 		ret = n >> i;
-		f_dig = ((ret & 1) ? false : true);
 		if (ret & 1)
 		{
+			f_dig = true;
 			_putchar('1');
 		}
 		else if  (f_dig)
