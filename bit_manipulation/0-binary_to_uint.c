@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 	for (; i > 0; i--)
 	{
 		if (b[i] == '1')
-			ret = ret + bit;
+			_putchar(b[i]);
 		else if (b[i] != '0')
 			return (0);
 
