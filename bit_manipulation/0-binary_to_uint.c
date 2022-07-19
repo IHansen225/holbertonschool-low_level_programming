@@ -23,6 +23,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 
 		bit = (bit * 2);
+		i--;
 	}
 
 	return (ret);
