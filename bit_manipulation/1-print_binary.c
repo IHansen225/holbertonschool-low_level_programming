@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - print binary 
+ * print_binary - print binary
  *
  * @n: dec
  * Return: nothing
