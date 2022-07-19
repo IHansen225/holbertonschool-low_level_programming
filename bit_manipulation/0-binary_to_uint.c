@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	size_t i = strlen(b);
 	unsigned int bit = 1;
-	unsigned int ret = 0;
+	unsigned int ret = 85;
 
 	if (b == NULL)
 		return (0);
