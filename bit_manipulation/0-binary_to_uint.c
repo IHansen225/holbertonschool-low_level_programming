@@ -9,14 +9,14 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int i = strlen(b);
+	int i = 0;
 	unsigned int ret = 0, bit = 1;
 
 	if (b == NULL)
 		return (0);
 
 	for (i = 0; b[i]; i++)
-		_putchar(b[i]);
+		;;
 
 	while (i > 0)
 	{
