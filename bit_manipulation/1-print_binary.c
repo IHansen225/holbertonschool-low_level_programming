@@ -20,6 +20,7 @@ void print_binary(unsigned long int n)
 	for (i = 63; i == 0; i--)
 	{
 		ret = n >> i;
+		
 		if (ret & 1)
 		{
 			f_dig = true;
