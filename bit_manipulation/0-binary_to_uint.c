@@ -13,11 +13,12 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int bit = 1;
 	unsigned int ret = 0;
 
-	if ((!b) || (strlen(b) > 64))
+	if (!b)
 		return (0);
 
-	for (i = strlen(b); i > 0; i--)
+	for (i = strlen(b); i == 0; i--)
 	{
+		_putchar(b[i]);
 		if (b[i] == '1')
 			ret += bit;
 		else if (b[i] != '0')
