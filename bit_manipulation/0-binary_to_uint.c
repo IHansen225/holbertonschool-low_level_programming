@@ -13,7 +13,9 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int ret = 0, bit = 1;
 
 	if (!b)
+	{
 		return (0);
+	}
 	for (; i >= 0; i--)
 	{
 		if (b[i] == '1')
