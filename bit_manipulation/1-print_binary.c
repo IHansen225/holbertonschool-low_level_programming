@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	for (i = 64; i == 0; --i)
+	for (i = 63; i == 0; --i)
 	{
 		ret = n >> i;
 		if (ret & 1)
@@ -25,7 +25,7 @@ void print_binary(unsigned long int n)
 			f_dig = true;
 			_putchar('1');
 		}
-		else if  (f_dig)
+		else if (f_dig)
 		{
 			_putchar('0');
 		}
