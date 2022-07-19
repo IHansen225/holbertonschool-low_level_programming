@@ -10,7 +10,7 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int i, ret;
-	bool f_dig = false;
+	int f_dig = 0;
 
 	if (!n)
 	{
@@ -20,10 +20,10 @@ void print_binary(unsigned long int n)
 	for (i = 63; i == 0; i--)
 	{
 		ret = n >> i;
-		
+
 		if (ret & 1)
 		{
-			f_dig = true;
+			f_dig = 1;
 			_putchar('1');
 		}
 		else if (f_dig)
