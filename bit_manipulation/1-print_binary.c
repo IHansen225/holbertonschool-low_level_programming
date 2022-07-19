@@ -19,6 +19,11 @@ void print_binary(unsigned long int n)
 	}
 	for (i = 64; i >= 0; --i)
 	{
-		if 
+		ret = n >> i;
+		f_dig = ((ret & 1) ? false : true);
+		if (ret & 1)
+			_putchar('1');
+		else if  (f_dig)
+			_putchar('0');
 	}
 }
