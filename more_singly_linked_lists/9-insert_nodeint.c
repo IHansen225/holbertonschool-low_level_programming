@@ -4,6 +4,7 @@
  * add_nodeint - prints list length
  *
  * @head: list header
+ * @idx: index
  * @n: number to add
  * Return: 0
  */
