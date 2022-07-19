@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 	for (i = 0; b[i]; i++)
 		;;
 
-	while (i > 0)
+	for (; i > 0; i--)
 	{
 		if (b[i] == '1')
 			ret += bit;
@@ -26,7 +26,6 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 
 		bit = (bit * 2);
-		i--;
 	}
 
 	return (ret);
