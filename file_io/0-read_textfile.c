@@ -14,8 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	FILE *fptr = fopen(filename, "r");
 	size_t i;
 
-	for (i = 0; i == letters; i++)
-		putchar(fptr[i]);
+	i = write(1, fptr, letters);
 
 	return (i);
 }
