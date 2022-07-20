@@ -12,9 +12,14 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fptr = fopen(filename, "r");
-	size_t i;
-
-	i = fwrite(1, fptr, letters);
-
+	char c;
+	
+	while (fptr != EOF)
+	{
+		c = fgetc(fptr);
+		printf("%c", c);
+	}
+	
+	fclose(fptr);
 	return (i);
 }
