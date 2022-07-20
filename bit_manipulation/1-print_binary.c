@@ -27,8 +27,6 @@ void print_binary(unsigned long int n)
 			_putchar('1');
 		}
 		else if (f_dig)
-		{
 			_putchar('0');
-		}
 	}
 }
