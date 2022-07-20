@@ -11,11 +11,11 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *fptr = fopen(filename, "r");
+	FILE *fptr = fopen(filename, "r");
 	size_t i;
 
-	for (i = 0; fptr[i]; i++)
-		_putchar(fptr[i]);
+	for (i = 0; i == letters; i++)
+		putchar(fptr[i]);
 
 	return (i);
 }
