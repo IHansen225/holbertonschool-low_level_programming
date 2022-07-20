@@ -10,24 +10,14 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int ret;
-	int i;
-	bool f_dig = false;
+	int bcount = 0, i = 64;
+	unsigned long int bits = (n ^ m);
 
-	if (!n)
+	for (; i >= 0; --i)
 	{
-		_putchar('0');
-		return;
+		if ((bits << i) == 1)
+			bcount++;
 	}
-	for (i = 63; i >= 0; i--)
-	{
-		ret = n >> i;
-		if (ret & 1)
-		{
-			f_dig = true;
-			_putchar('1');
-		}
-		else if (f_dig)
-			_putchar('0');
-	}
+	
+	return (bcount);
 }
