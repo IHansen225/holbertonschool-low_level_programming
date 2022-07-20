@@ -10,8 +10,7 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int mask = 0;
-	int i = 0;
+	unsigned int mask = 0, i = 0;
 	
 	if ((!n) || (index > 63))
 	{
