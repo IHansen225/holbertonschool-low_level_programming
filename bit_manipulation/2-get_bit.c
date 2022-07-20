@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * print_binary - print binary
+ * get_bit - print binary
  *
  * @n: dec
+ * @index: index
  * Return: nothing
  */
 
