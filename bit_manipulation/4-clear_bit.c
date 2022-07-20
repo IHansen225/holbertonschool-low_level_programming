@@ -19,7 +19,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	}
 	for (; i < 64; i++)
 	{
-		if (i = index)
+		if (i == index)
 			continue;
 		else
 			mask = ((*n) & (1 << i));
