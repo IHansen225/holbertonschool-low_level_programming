@@ -18,6 +18,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		if ((bits << i) == 1)
 			bcount++;
 	}
-	
+
 	return (bcount);
 }
