@@ -11,17 +11,25 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fptr = fopen(filename, "r");
+	FILE *fptr;
 	char c;
 	size_t i = 0;
 
+	if (!filename)
+	{
+		return (0);
+	}
+	fptr = fopen(filename, "r")
 	while ((c != EOF) && (i < letters))
 	{
 		c = fgetc(fptr);
 		printf("%c", c);
 		i++;
 	}
-
 	fclose(fptr);
+	if (i < letters)
+	{
+		return (0);
+	}
 	return (i);
 }
