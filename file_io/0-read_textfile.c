@@ -36,11 +36,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	wfile = write(STDOUT_FILENO, fptr, strlen(fptr));
+	close(ofile);
 	if ((wfile == -1) || (wfile < let))
 	{
-		free(fptr);
 		return (0);
 	}
-	close(ofile);
 	return (wfile);
 }
