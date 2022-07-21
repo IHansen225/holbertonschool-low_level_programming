@@ -5,7 +5,7 @@
  * 
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	// int i, ofile, rfile, wfile;
 
@@ -14,4 +14,6 @@ void main(int argc, char *argv[])
 		printf("Usage: cp file_from file_to");
 		exit (97);
 	}
+
+	return (0);
 }
