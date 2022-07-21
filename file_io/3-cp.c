@@ -8,7 +8,6 @@
 int main(int argc, char *argv[])
 {
 	int ofile_from, ofile_to, cfile;
-	char buffer[1024];
 
 	if (argc < 3)
 	{
