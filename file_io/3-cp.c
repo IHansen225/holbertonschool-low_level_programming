@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	/*
 	 * int i, ofile, rfile, wfile;
 	*/
-
+	(void)argv;
 	if (argc < 3)
 	{
 		printf("Usage: cp file_from file_to");
