@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_file - read a text file
+ * append_text_to_file - read a text file
  *
  * @filename: the name of the file
  * @text_content: the number of characters to read
@@ -9,7 +9,7 @@
  * Return: the number of characters read
  */
 
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int ofile, wfile;
 
