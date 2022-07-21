@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[])
 {
-	int ofile_from, ofile_to, cfile, x;
+	int ofile_from, ofile_to, cfile, rfile;
 	char buffer[1024];
 
 	if (argc < 3)
@@ -33,10 +33,8 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while((x = fgetc(ofile_from)) != EOF)
-    {
-      fputc(x, ofile_to);
-    }
+	rfile = read(ofile_from, buffer, 1024);
+	wfile = write(ofile_to, buffer, 1024);
 
 	return (0);
 }
