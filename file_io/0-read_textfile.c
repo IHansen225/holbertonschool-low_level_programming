@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * read_textfile - read a text file 
- * 
+ * read_textfile - read a text file
+ *
  * @filename: the name of the file
  * @letters: the number of characters to read
- * 
+ *
  * Return: the number of characters read
  */
 
@@ -31,7 +31,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	rfile = read(ofile, fptr, letters);
 	if (rfile == -1)
 	{
-		free(fptr);	
+		free(fptr);
 		return (0);
 	}
 	wfile = write(1, fptr, strlen(fptr));
