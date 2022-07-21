@@ -11,25 +11,33 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fptr;
-	char c;
-	size_t i = 0;
+	char *fptr = malloc(letters);
+	size_t ofile, rfile, wfile;
 
+	if (!fptr)
+	{
+		return (0);
+	}
 	if (!filename)
 	{
+		return (0)
+	}
+	ofile = open(filename, O_RDONLY);
+	if (ofile == -1)
+	{
+		free(fptr);
 		return (0);
 	}
-	fptr = fopen(filename, "r");
-	while ((c != EOF) && (i < letters))
+	rfile = read(ofile, fptr, letters);
+	if (rfile == -1)
 	{
-		c = fgetc(fptr);
-		printf("%c", c);
-		i++;
-	}
-	fclose(fptr);
-	if (i < letters)
-	{
+		free(fptr);	
 		return (0);
 	}
-	return (i);
+	wfile = write((fileno(STDOUT)), fptr, letters);
+	if ((wfile == -1) || (wfile < letters))
+	{
+		free(fptr);
+		return (0);
+	}
 }
