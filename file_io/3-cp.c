@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[])
 {
-	int ofile_from, ofile_to, cfile, rfile;
+	int ofile_from, ofile_to, cfile, rfile, wfile;
 	char buffer[1024];
 
 	if (argc < 3)
