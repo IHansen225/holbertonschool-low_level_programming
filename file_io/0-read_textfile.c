@@ -12,7 +12,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *fptr = malloc(letters);
-	int ofile, rfile, wfile;
+	int ofile, rfile, wfile, let;
 
 	if (!fptr)
 	{
@@ -22,6 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
+	let = (int)letters;
 	ofile = open(filename, O_RDONLY);
 	if (ofile == -1)
 	{
@@ -35,7 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	wfile = write((fileno(STDOUT)), fptr, letters);
-	if ((wfile == -1) || (wfile < letters))
+	if ((wfile == -1) || (wfile < let))
 	{
 		free(fptr);
 		return (0);
