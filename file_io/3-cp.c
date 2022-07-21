@@ -7,7 +7,9 @@
 
 int main(int argc, char *argv[])
 {
-	// int i, ofile, rfile, wfile;
+	/*
+	 * int i, ofile, rfile, wfile;
+	*/
 
 	if (argc < 3)
 	{
