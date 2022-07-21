@@ -1,8 +1,12 @@
 #include "main.h"
 
 /**
- * @brief
+ * main - read a text file
  *
+ * @argc: argument count
+ * @argv: argument list
+ * 
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
