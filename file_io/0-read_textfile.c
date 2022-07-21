@@ -12,7 +12,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *fptr = malloc(letters);
-	long unsigned int ofile, rfile, wfile;
+	int ofile, rfile, wfile;
 
 	if (!fptr)
 	{
@@ -40,4 +40,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(fptr);
 		return (0);
 	}
+	return (wfile);
 }
