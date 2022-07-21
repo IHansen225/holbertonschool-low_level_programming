@@ -11,13 +11,13 @@ int main(int argc, char *argv[])
 
 	if (argc < 3)
 	{
-		fprintf(STDERR, "Usage: cp file_from file_to");
+		fprintf(stderr, "Usage: cp file_from file_to");
 		exit (97);
 	}
 	ofile_from = open(argv[1], O_RDONLY);
 	if (ofile_from == -1)
 	{
-		fprintf(STDERR, "Error: Can't read from %s", argv[1]);
+		fprintf(stderr, "Error: Can't read from %s", argv[1]);
 		exit (98);
 	}
 
