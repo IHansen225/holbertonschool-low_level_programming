@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - print a list
+ * print_dlistint - print a list
  *
  * @h: list header
  * Return: 0
