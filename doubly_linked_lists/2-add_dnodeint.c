@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - prints list length
+ * add_dnodeint - prints list length
  *
  * @head: list header
  * @n: number to add
