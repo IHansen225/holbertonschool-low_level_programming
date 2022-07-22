@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * sum_listint - sums every element of a list
+ * sum_dlistint - sums every element of a list
  *
  * @head: list header
  * Return: 0
  */
 
-int sum_listint(dlistint_t *head)
+int sum_dlistint(dlistint_t *head)
 {
 	dlistint_t *p;
 	int i = 0;
