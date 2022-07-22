@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_list - adds node at end of list
+ * free_dlistint - adds node at end of list
  *
  * @head: list header
  * Return: 0
