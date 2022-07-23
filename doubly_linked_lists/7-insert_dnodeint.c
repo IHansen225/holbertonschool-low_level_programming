@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - function
+ * insert_dnodeint_at_index - function
  *
- * @head: list header
+ * @h: list header
  * @idx: index
  * @n: number to add
  * Return: 0
