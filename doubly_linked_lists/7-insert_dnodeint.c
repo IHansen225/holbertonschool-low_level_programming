@@ -29,10 +29,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		newelement->prev = NULL;
 		return (newelement);
 	}
-	for (; i == idx; i++)
+	while ((pr->next != NULL) && (i != idx))
 	{
-		if (pr->next != NULL)
-			pr = pr->next;
+		pr = pr->next;
+		i++;
 	}
 	if ((pr->next == NULL) && (idx > i))
 	{
