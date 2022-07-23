@@ -14,11 +14,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *newelement, *pr;
 	unsigned int i;
 
-	(void) n;
-	if (!*h)
-	{
-		return (NULL);
-	}
 	pr = *h;
 	while ((pr->next != NULL) && (i != idx))
 	{
@@ -35,6 +30,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		free(newelement);
 		return (NULL);
 	}
+	if (!*h)
+	{
+		newelement->next = NULL;
+		newelement->prev = NULL;
+		newelement->n = n;
+		return (newelement);
+	}
+
+
 
 	return (newelement);
 }
