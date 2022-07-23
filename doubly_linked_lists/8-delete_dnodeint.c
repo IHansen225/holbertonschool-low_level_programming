@@ -30,10 +30,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		pr = pr->next;
 		i++;
 	}
-	aux = pr->next->next;
-	free(pr->next);
-	pr->next = aux;
-	pr->next->prev = pr;
+	if ((pr->next == NULL) && (index > i + 1))
+	{
+		return (-1);
+	}
 
 	return (1);
 }
