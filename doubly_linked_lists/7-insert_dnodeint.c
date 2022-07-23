@@ -38,7 +38,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		return (NULL);
 	}
-	printf("%d\n", pr->n);
+	printf("%d\n", idx);
 
 	return (newelement);
 }
