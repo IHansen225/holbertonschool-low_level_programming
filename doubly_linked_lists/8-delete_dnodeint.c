@@ -1,12 +1,11 @@
 #include "lists.h"
 
 /**
- * insert_dnodeint_at_index - function
+ * delete_dnodeint_at_index - function
  *
- * @h: list header
+ * @head: list header
  * @index: index
- * @n: number to add
- * Return: 0
+ * Return: something
  */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
