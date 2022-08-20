@@ -28,6 +28,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		node_arr[i] = malloc(sizeof(hash_node_t));
 		node_arr[i]->key = malloc(sizeof(char *));
 		node_arr[i]->value = malloc(sizeof(char *));
+		node_arr[i]->next = NULL;
 		if (!node_arr[i] || !node_arr[i]->key || node_arr[i]->value)
 		{
 			for (; i > 0; i--)
