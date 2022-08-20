@@ -26,17 +26,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	for (i = 0; node_arr[i]; i++)
 	{
 		node_arr[i] = malloc(sizeof(hash_node_t));
-		node_arr[i]->key = malloc(sizeof(char *));
-		node_arr[i]->value = malloc(sizeof(char *));
-		node_arr[i]->next = NULL;
-		if (!node_arr[i] || !node_arr[i]->key || node_arr[i]->value)
+		if (!node_arr[i])
 		{
 			for (; i > 0; i--)
-			{
-				free(node_arr[i]->key);
-				free(node_arr[i]->value);
 				free(node_arr[i]);
-			}
 			free(ht);
 			return (NULL);
 		}
