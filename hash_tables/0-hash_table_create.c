@@ -23,7 +23,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(ht);
 		return (NULL);
 	}
-	for (i = 0; i <= ((size/(sizeof(hash_node_t))) - 1); i++)
+	for (i = 0; node_arr[i]; i++)
 	{
 		node_arr[i] = malloc(sizeof(hash_node_t));
 		if (!node_arr[i])
