@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - hash table print element
+ * hash_table_delete - hash table delete
  *
  * @ht: hash table
  * Return: nothing
@@ -31,6 +31,7 @@ void hash_table_delete(hash_table_t *ht)
 				}
 				free(aux_node);
 			}
+			free((ht->array)[index]);
 		}
 		free(ht);
 	}
