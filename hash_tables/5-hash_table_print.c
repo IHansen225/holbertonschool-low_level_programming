@@ -10,7 +10,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int index;
-	int nf = 0;
+	int nf = 0, nfi = 0;
 	hash_node_t *aux_node;
 
 	if (!ht)
@@ -23,16 +23,19 @@ void hash_table_print(const hash_table_t *ht)
 			if ((ht->array)[index])
 			{
 				aux_node = ht->array[index];
+				nfi = 1;
 				while (aux_node)
 				{
 					if (nf && ((ht->array)[index]))
 						printf(", ");
-					printf("'%s': ", ((ht->array)[index])->key);
+					printf("'%s'", ((ht->array)[index])->key);
+					if (nfi)
+						printf(": ");
 					printf("'%s'", ((ht->array)[index])->value);
 					nf = 1;
+					nfi = 0;
 					aux_node = aux_node->next;
 				}
-				
 			}
 		}
 		printf("}\n");
