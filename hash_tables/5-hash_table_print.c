@@ -27,8 +27,8 @@ void hash_table_print(const hash_table_t *ht)
 				{
 					if (nf && ((ht->array)[index]))
 						printf(", ");
-					printf("'%s': ", ((ht->array)[index])->key);
-					printf("'%s'", ((ht->array)[index])->value);
+					printf("'%s': ", (aux_node->key));
+					printf("'%s'", (aux_node->value));
 					aux_node = aux_node->next;
 					nf = 1;
 				}
