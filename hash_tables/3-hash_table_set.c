@@ -9,7 +9,7 @@
  * Return: 0 if successful, 1 otherwise
  */
 
-int hash_table_set(hash_table_t *ht, const unsigned char *key, const char *value)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new_node, *aux_node;
 	unsigned long int index;
