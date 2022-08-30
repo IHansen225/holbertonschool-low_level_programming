@@ -2,7 +2,7 @@
 
 /**
  * binary_search - binary search algorithm
- * 
+ *
  * @array: array to search
  * @size: size of the array
  * @value: value to search
@@ -14,7 +14,7 @@ int binary_search(int *array, size_t size, int value)
 	size_t i, mid, low, high;
 
 	if (!array)
-		return -1;
+		return (-1);
 	high = size - 1, low = 0;
 	while (low <= high)
 	{
