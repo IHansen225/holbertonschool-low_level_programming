@@ -1,6 +1,9 @@
 ## Repository: Low level programming
 ### Authors: [@Ihansen225](https://www.github.com/Ihansen225)
 Repository containing low-level programming exercises in C
+### Tools used:
+- [Vim editor for Linux](https://www.vim.org/)
+- [Gcc compiler](https://gcc.gnu.org/) (using `-Wall -Werror -Wextra -pedantic -std=gnu89`)
 
 ### Project folders:
 | File                                                                                                                                            | Description                                                                       |
