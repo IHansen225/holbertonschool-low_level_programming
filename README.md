@@ -1,3 +1,8 @@
+## Repository: Low level programming
+### Authors: [@Ihansen225](https://www.github.com/Ihansen225)
+Repository containing low-level programming exercises in C
+
+### Project folders:
 | File                                                                                                                                            | Description                                                                       |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | [./argc\_argv](https://github.com/IHansen225/holbertonschool-low_level_programming/tree/master/argc_argv)                                       | Scripts centered in argument count and vector manipulation.                       |
@@ -22,4 +27,4 @@
 | [./static\_libraries](https://github.com/IHansen225/holbertonschool-low_level_programming/tree/master/static_libraries)                         | Static libs research and testing exercises.                                       |
 | [./structures\_typedef](https://github.com/IHansen225/holbertonschool-low_level_programming/tree/master/structures_typedef)                     | Pseudo-object creation and manipulation in C.                                     |
 | [./variables\_if\_else\_while](https://github.com/IHansen225/holbertonschool-low_level_programming/tree/master/variables_if_else_while)         | Variables and basic loops exercises in C.                                         |
-| [./variadic\_functions](https://github.com/IHansen225/holbertonschool-low_level_programming/tree/master/variadic_functions)                     | Variable parameter function exercises in C.      
+| [./variadic\_functions](https://github.com/IHansen225/holbertonschool-low_level_programming/tree/master/variadic_functions)                     | Variable parameter function exercises in C.
