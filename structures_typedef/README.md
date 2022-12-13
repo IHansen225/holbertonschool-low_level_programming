@@ -19,4 +19,4 @@ Preprocessor research and testing exercises.
 | [5-free\_dog.c](https://github.com/IHansen225/holbertonschool-low_level_programming/blob/master/structures_typedef/5-free_dog.c)   | Write a function that frees dogs.              |
 | [dog.h](https://github.com/IHansen225/holbertonschool-low_level_programming/blob/master/structures_typedef/dog.h)                  | Header file necessary for program functioning. |
 
-#### Note: Some non-essential missing files 
+#### Note: Missing some non-essential files 
